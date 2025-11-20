@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>ProTimer - The Ultimate Church & Presentation Timer App</title>
+    <meta name="description"
+        content="Download ProTimer, the best free cross-platform timer for churches, conferences, and presentations. Features fullscreen display, custom backgrounds, and OBS support. Available for Mac, Windows, and Linux.">
+    <meta name="keywords"
+        content="church timer, presentation timer, countdown timer, obs timer, conference timer, mac timer, windows timer, linux timer, stage timer">
+    <meta name="author" content="ProTimer Team">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="ProTimer - Professional Stage Timer">
+    <meta property="og:description"
+        content="The most reliable cross-platform timer for your events. Download now for free.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/preview.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-stopwatch"></i> ProTimer
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#download">Download</a>
+            <a href="#guide">Guide</a>
+            <a href="https://github.com/yourusername/timerapp" target="_blank" class="github-btn"><i
+                    class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">v1.4.0 Released</span>
+            <h1>The Professional<br><span class="gradient-text">Stage Timer</span></h1>
+            <p class="hero-subtitle">
+                Designed for <strong>Churches</strong>, <strong>Conferences</strong>, and <strong>Broadcasters</strong>.
+                Seamlessly manage time across multiple screens with a stunning, customizable interface.
+            </p>
+            <div class="cta-group">
+                <a href="#download" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download Now</a>
+                <a href="#features" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="os-detected" id="os-hint">
+                <!-- JS will populate this -->
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="app-window">
+                <div class="window-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="window-content">
+                    <!-- We will use CSS to simulate the app interface here -->
+                    <div class="timer-display">00:05:00</div>
+                    <div class="timer-controls">
+                        <div class="control-btn">Start</div>
+                        <div class="control-btn">Reset</div>
+                    </div>
+                </div>
+                <div class="glow-effect"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2>Why Choose ProTimer?</h2>
+            <p>Built for reliability, designed for visibility.</p>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon-box"><i class="fa-solid fa-expand"></i></div>
+                <h3>Fullscreen Mode</h3>
+                <p>Project a clean, distraction-free timer on secondary displays or projectors. Perfect for confidence
+                    monitors.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box"><i class="fa-solid fa-palette"></i></div>
+                <h3>Custom Themes</h3>
+                <p>Match your brand or stage lighting. Customize background colors, images, and font styles instantly.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box"><i class="fa-brands fa-linux"></i></div>
+                <h3>Cross-Platform</h3>
+                <p>Native performance on macOS (Intel & Apple Silicon), Windows 10/11, and Linux distributions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box"><i class="fa-solid fa-bell"></i></div>
+                <h3>Smart Alerts</h3>
+                <p>Visual and audio warnings when time is running out. Overtime mode turns the display red
+                    automatically.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="section-header">
+            <h2>Get ProTimer Today</h2>
+            <p>Free and open source. Select your platform below.</p>
+        </div>
+
+        <div class="download-tabs">
+            <button class="tab-btn active" data-tab="mac">
+                <i class="fa-brands fa-apple"></i> macOS
+            </button>
+            <button class="tab-btn" data-tab="windows">
+                <i class="fa-brands fa-windows"></i> Windows
+            </button>
+            <button class="tab-btn" data-tab="linux">
+                <i class="fa-brands fa-linux"></i> Linux
+            </button>
+        </div>
+
+        <div class="tab-content active" id="mac">
+            <div class="download-card">
+                <div class="card-icon"><i class="fa-brands fa-apple"></i></div>
+                <h3>macOS Universal</h3>
+                <p>Requires macOS 10.15+</p>
+                <div class="btn-stack">
+                    <a href="releases/mac-arm64/TimerApp" class="btn btn-download">
+                        <span>Download for Apple Silicon (M1/M2)</span>
+                        <span class="size">60 MB</span>
+                    </a>
+                    <a href="releases/mac-intel/TimerApp" class="btn btn-download-outline">
+                        <span>Download for Intel Mac</span>
+                        <span class="size">64 MB</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="windows">
+            <div class="download-card">
+                <div class="card-icon"><i class="fa-brands fa-windows"></i></div>
+                <h3>Windows x64</h3>
+                <p>Windows 10 or 11</p>
+                <div class="btn-stack">
+                    <a href="releases/windows/TimerApp.exe" class="btn btn-download">
+                        <span>Download .exe Installer</span>
+                        <span class="size">65 MB</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="linux">
+            <div class="download-card">
+                <div class="card-icon"><i class="fa-brands fa-linux"></i></div>
+                <h3>Linux x64</h3>
+                <p>Ubuntu, Debian, Fedora</p>
+                <div class="btn-stack">
+                    <a href="releases/linux/TimerApp" class="btn btn-download">
+                        <span>Download Binary</span>
+                        <span class="size">70 MB</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>ProTimer</h4>
+                <p>The open-source standard for event timing.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links</h4>
+                <a href="https://github.com">Source Code</a>
+                <a href="#">Report Issue</a>
+                <a href="#">License</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 ProTimer Project. Built with .NET & Avalonia.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
